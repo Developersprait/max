@@ -6,7 +6,7 @@
     margin: 0 auto
 
 #slide1
-    @include img('../img/4.jpg', auto, 400px, contain)
+    @include img('../img/b2.jpg', auto, 400px, contain)
     background-position: center
 #slide2
     @include img('../img/5.jpg', auto, 400px, contain)
@@ -14,7 +14,7 @@
     @include img('../img/b1.jpg', auto, 400px, contain)
     background-position: center
 #slide4
-    @include img('../img/b2.jpg', auto, 400px, contain)
+    @include img('../img/4.jpg', auto, 400px, contain)
 #slide5
     @include img('../img/b3.jpg', auto, 400px, cover)
     background-position: center    
@@ -43,3 +43,9 @@
     cursor: pointer
 .slick-dots li[class="slick-active"] button
     background: #fff
+
+@media screen and ( max-width:816px  ) 
+    .slider
+        width: 80%    
+    #slide5
+        background-size: contain

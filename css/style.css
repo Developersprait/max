@@ -289,6 +289,9 @@ body {
 }
 
 @media screen and (max-width: 816px) {
+  .about {
+    height: 638px;
+  }
   .about__box {
     width: 500px;
   }
@@ -309,7 +312,8 @@ body {
 }
 .gallery {
   background-color: #000;
-  height: 490px;
+  height: 520px;
+  padding-top: 30px;
 }
 .gallery__title {
   text-align: center;
@@ -328,7 +332,7 @@ body {
 }
 
 #slide1 {
-  background: url("../img/4.jpg");
+  background: url("../img/b2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -357,7 +361,7 @@ body {
 }
 
 #slide4 {
-  background: url("../img/b2.jpg");
+  background: url("../img/4.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -404,4 +408,14 @@ body {
 
 .slick-dots li[class=slick-active] button {
   background: #fff;
+}
+
+@media screen and (max-width: 816px) {
+  .slider {
+    width: 80%;
+  }
+
+  #slide5 {
+    background-size: contain;
+  }
 }/*# sourceMappingURL=style.css.map */
