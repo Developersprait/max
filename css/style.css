@@ -324,6 +324,30 @@ body {
   margin-bottom: 40px;
 }
 
+.button {
+  height: 120px;
+  background-color: #000;
+  padding-top: 30px;
+}
+.button__btn {
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #fdf68b;
+  padding: 10px 0 0 20px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.button__btn a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.button__btn:hover {
+  opacity: 0.5;
+}
+
 .slider {
   width: 650px;
   height: 321px;
@@ -418,4 +442,34 @@ body {
   #slide5 {
     background-size: contain;
   }
+}
+#modal {
+  display: none;
+  width: 250px;
+  height: 260px;
+  background-color: #000;
+}
+#modal form {
+  text-align: center;
+}
+#modal input {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #fdf68b;
+}
+#modal input[type=text] {
+  height: 35px;
+  font-size: 0.9rem;
+  padding-left: 10px;
+}
+#modal input[type=submit] {
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+#modal .fancybox-button {
+  color: #fdf68b;
 }/*# sourceMappingURL=style.css.map */
