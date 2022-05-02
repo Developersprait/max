@@ -7,10 +7,138 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .container {
   max-width: 1170px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 440px;
+  }
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  z-index: 100;
+  padding-top: 10px;
+  box-shadow: 0px 13px 27px 6px rgba(253, 246, 139, 0.17);
+}
+.header__box {
+  display: flex;
+  justify-content: space-between;
+}
+.header__item-left, .header__item-right {
+  display: flex;
+}
+.header__phone {
+  display: flex;
+  margin-right: 15px;
+}
+.header__phone-num {
+  text-decoration: none;
+  color: #fdf68b;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+}
+.header__phone-img {
+  background: url("../img/logo/phone-32.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+.header__email {
+  display: flex;
+}
+.header__email-link {
+  text-decoration: none;
+  color: #fdf68b;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.header__email-img {
+  background: url("../img/logo/message-32.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+.header__social {
+  margin-right: 10px;
+}
+
+#tg {
+  background: url("../img/logo/telegram-32.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+#wa {
+  background: url("../img/logo/whatsapp-32.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+#vi {
+  background: url("../img/logo/viber-4-32.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+#in {
+  background: url("../img/logo/instagram-32.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+#vk {
+  background: url("../img/logo/vk-32.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .header__email {
+    display: none;
+  }
+  .header__phone-num {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

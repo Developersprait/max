@@ -1,0 +1,60 @@
+@import '../_vars'
+.header
+    position: fixed
+    top: 0
+    width: 100%
+    height: 40px
+    background-color: #000
+    z-index: 100
+    padding-top: 10px
+    -webkit-box-shadow: 0px 13px 27px 6px rgba(253, 246, 139, 0.17)
+    -moz-box-shadow: 0px 13px 27px 6px rgba(253, 246, 139, 0.17)
+    box-shadow: 0px 13px 27px 6px rgba(253, 246, 139, 0.17)
+    &__box
+        display: flex
+        justify-content: space-between
+    &__item
+        &-left,
+        &-right
+            display: flex
+    &__phone
+        display: flex
+        margin-right: 15px
+        &-num
+            text-decoration: none
+            color: $gold
+            letter-spacing: 1.6px
+            font-weight: 600
+        &-img
+            @include img('../img/logo/phone-32.png', 20px, 20px, cover)
+            margin-right: 7px
+    &__email
+        display: flex
+        &-link
+            text-decoration: none
+            color: $gold
+            letter-spacing: 1px
+            font-weight: 600
+        &-img
+            @include img('../img/logo/message-32.png', 20px, 20px, cover)
+            margin-right: 7px
+    &__social
+        margin-right: 10px
+#tg
+    @include img('../img/logo/telegram-32.png', 20px, 20px, cover)
+#wa
+    @include img('../img/logo/whatsapp-32.png', 20px, 20px, cover)
+#vi
+    @include img('../img/logo/viber-4-32.png', 20px, 20px, cover)
+#in
+    @include img('../img/logo/instagram-32.png', 20px, 20px, cover)
+#vk
+    @include img('../img/logo/vk-32.png', 20px, 20px, cover)
+
+@media screen and ( max-width:576px  )
+    .header
+        &__email
+            display: none
+        &__phone
+            &-num
+                font-size: 0.8rem
