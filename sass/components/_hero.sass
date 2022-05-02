@@ -1,0 +1,29 @@
+@import '../vars'
+.hero
+    margin-top: 40px
+    @include img('../img/desk.jpg',100%, 650px, cover)
+    background-position: top
+    &__box
+        width: 500px
+        margin: 0 auto
+        text-align: center
+        padding-top: 200px
+    &__title 
+        font-size: 1.8rem
+        color: $gold
+        text-transform: uppercase
+        letter-spacing: 2px
+        margin-bottom: 70px
+    &__subtitle
+        font-family: $font
+        color: $gold
+        letter-spacing: 5px
+        font-size: 5rem
+@media screen and ( max-width:576px  )
+    .hero
+        &__box
+            width: 245px
+        &__title
+            font-size: 1.3rem
+        &__subtitle
+            font-size: 2.5rem        

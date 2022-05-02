@@ -141,4 +141,45 @@ body {
   .header__phone-num {
     font-size: 0.8rem;
   }
+}
+.hero {
+  margin-top: 40px;
+  background: url("../img/desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  background-position: top;
+}
+.hero__box {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 200px;
+}
+.hero__title {
+  font-size: 1.8rem;
+  color: #fdf68b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+}
+.hero__subtitle {
+  font-family: "Lobster", cursive;
+  color: #fdf68b;
+  letter-spacing: 5px;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .hero__box {
+    width: 245px;
+  }
+  .hero__title {
+    font-size: 1.3rem;
+  }
+  .hero__subtitle {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
