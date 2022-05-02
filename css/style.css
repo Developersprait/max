@@ -163,13 +163,20 @@ body {
   color: #fdf68b;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .hero__subtitle {
   font-family: "Lobster", cursive;
   color: #fdf68b;
   letter-spacing: 5px;
   font-size: 5rem;
+  margin-bottom: 40px;
+}
+.hero__text {
+  font-family: "Lobster", cursive;
+  color: #fdf68b;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 576px) {
@@ -260,7 +267,7 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 600px;
+  height: 535px;
   background-position: top;
 }
 .about__box {
@@ -299,4 +306,102 @@ body {
   .about__text {
     font-size: 0.8rem;
   }
+}
+.gallery {
+  background-color: #000;
+  height: 490px;
+}
+.gallery__title {
+  text-align: center;
+  color: #fdf68b;
+  line-height: 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.slider {
+  width: 650px;
+  height: 321px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#slide1 {
+  background: url("../img/4.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 400px;
+  background-position: center;
+}
+
+#slide2 {
+  background: url("../img/5.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 400px;
+}
+
+#slide3 {
+  background: url("../img/b1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 400px;
+  background-position: center;
+}
+
+#slide4 {
+  background: url("../img/b2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 400px;
+}
+
+#slide5 {
+  background: url("../img/b3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 400px;
+  background-position: center;
+}
+
+.slider .slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 110%;
+}
+
+.slick-dots button {
+  background: transparent;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  margin: 15px;
+  outline: none;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.slick-dots button:hover {
+  cursor: pointer;
+}
+
+.slick-dots li[class=slick-active] button {
+  background: #fff;
 }/*# sourceMappingURL=style.css.map */

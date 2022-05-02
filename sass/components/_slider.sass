@@ -1,0 +1,45 @@
+@import '../_vars'
+.slider
+    width: 650px
+    height: 321px
+    position: relative
+    margin: 0 auto
+
+#slide1
+    @include img('../img/4.jpg', auto, 400px, contain)
+    background-position: center
+#slide2
+    @include img('../img/5.jpg', auto, 400px, contain)
+#slide3
+    @include img('../img/b1.jpg', auto, 400px, contain)
+    background-position: center
+#slide4
+    @include img('../img/b2.jpg', auto, 400px, contain)
+#slide5
+    @include img('../img/b3.jpg', auto, 400px, cover)
+    background-position: center    
+
+
+.slider .slick-dots
+    text-align: center
+    display: flex // поставить кнопки в ряд
+    justify-content: center // выровнять по центру
+    list-style: none // убираем черные маркеры
+    position: absolute
+    right: 0
+    left: 0
+    top: 110%
+.slick-dots button
+    background: transparent// цвет фона
+    border: solid 2px #fff // без рамки
+    border-radius: 50% // радиус закругления
+    height: 17px // высота точки
+    width: 17px // ширина точки
+    margin: 15px // отступы между точками
+    outline: none // убираем обводку
+    overflow: hidden
+    font-size: 0
+.slick-dots button:hover
+    cursor: pointer
+.slick-dots li[class="slick-active"] button
+    background: #fff
