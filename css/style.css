@@ -307,7 +307,7 @@ body {
     height: 887px;
   }
   .about__box {
-    width: 280px;
+    width: 250px;
     margin: 0 auto;
   }
   .about__text {
@@ -373,12 +373,39 @@ body {
     margin: 0 auto;
   }
 
+  .phone {
+    width: 145px;
+    margin: 0 auto;
+  }
+
   .email {
     display: flex;
+    width: 210px;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .cr {
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+  }
 }
+.footer {
+  background-color: #000;
+}
+.footer__info {
+  color: #fdf68b;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.8rem;
+}
+.footer__info a {
+  text-decoration: none;
+  color: #fdf68b;
+}
+
 .slider {
   width: 650px;
   height: 321px;
