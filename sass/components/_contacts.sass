@@ -1,0 +1,20 @@
+.contacts
+    background-color: #000
+    &__box
+        display: flex
+        justify-content: space-between
+    &__info
+        color: $gold
+        margin-top: 20px
+        font-size: 0.8rem
+        text-align: center
+@media screen and ( max-width:576px  )
+    .contacts
+        &__box
+            display: block   
+            width: 280px
+            margin: 0 auto
+    .email
+        display: flex       
+        margin-top: 20px
+        margin-bottom: 20px        

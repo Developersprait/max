@@ -141,6 +141,9 @@ body {
   .header__phone-num {
     font-size: 0.8rem;
   }
+  .header__social {
+    margin-right: 7px;
+  }
 }
 .hero {
   margin-top: 40px;
@@ -305,6 +308,7 @@ body {
   }
   .about__box {
     width: 280px;
+    margin: 0 auto;
   }
   .about__text {
     font-size: 0.8rem;
@@ -348,6 +352,33 @@ body {
   opacity: 0.5;
 }
 
+.contacts {
+  background-color: #000;
+}
+.contacts__box {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__info {
+  color: #fdf68b;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .contacts__box {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .email {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .slider {
   width: 650px;
   height: 321px;
