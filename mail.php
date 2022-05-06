@@ -10,33 +10,31 @@ $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 $name = $_POST['user_name'];
-$surname = $_POST['user_surname'];
-$email = $_POST['user_mail'];
 $phone = $_POST['user_phone'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'wanderers-extreme.pl';  																							// Specify main and backup SMTP servers
+$mail->Host = 'prichal-ritual.by';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'admin@wanderers-extreme.pl'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '6.IM&Q(=DEWA'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'admin@prichal-ritual.by'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '{7=09;!vNVaI'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('admin@wanderers-extreme.pl'); // от кого будет уходить письмо?
-$mail->addAddress('sashavityaz1993@gmail.com');     // Кому будет уходить письмо     // Optional name
+$mail->setFrom('admin@prichal-ritual.by'); // от кого будет уходить письмо?
+$mail->addAddress('doctorsprait@gmail.com');     // Кому будет уходить письмо     // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта';
-$mail->Body    = '' .$name .$surname .'<br>телефон'.$phone. '<br>имейл: ' .$email;
+$mail->Body    = '' .$name .'<br>телефон'.$phone;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
 } else {
    echo "<script>
-   alert('dziękuję bardzo!'); 
+   alert('Спасибо! Мы очень быстро с вами сяжемся!'); 
    window.history.go(-1);
    </script>";
 }

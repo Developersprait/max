@@ -16,6 +16,16 @@ body {
   margin: 0 auto;
 }
 
+#modal-auto {
+  display: none;
+  height: 476px;
+  padding: 5px;
+  background-color: #000;
+}
+#modal-auto .fancybox-button {
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 720px;
@@ -316,8 +326,26 @@ body {
 }
 .gallery {
   background-color: #000;
-  height: 520px;
+  height: 120px;
   padding-top: 30px;
+}
+.gallery__box {
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #fdf68b;
+  padding: 10px 0 0 50px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.gallery__box a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.gallery__box:hover {
+  opacity: 0.5;
 }
 .gallery__title {
   text-align: center;
